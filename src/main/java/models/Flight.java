@@ -113,15 +113,14 @@ public class Flight {
 
     @Override
     public String toString(){
-        return "route { " +
-                "id = " + id +
-                ", day_of_week = '" + dayOfWeek + '\'' +
-                ", departure_date = '" + departureDate + '\'' +
-                ", departure_time = '" + departureTime + '\'' +
-                ", arrival_time = '" + arrivalTime + '\'' +
-                ", commander = '" + commander.getId() + '\'' +
-                ", pricing = '" + pricing.getId() + '\'' +
-                ", number_of_occupied_places = '" + numberOfOccupiedPlaces + '\'' +
-                '}';
+        return "\n{ ID = " + id +
+                ", день недели = '" + dayOfWeek + '\'' +
+                ", дата отпраления = '" + departureDate + '\'' +
+                ", время отправления = '" + departureTime + '\'' +
+                ", время прибытия = '" + arrivalTime + '\'' +
+                ", номер командира ВС = '" + commander.getId() + '\'' +
+                ", номер ценообразования = '" + pricing.getId() + '\'' +
+                ", количество занятых мест = '" + numberOfOccupiedPlaces + '\'' +
+                " }";
     }
 }

@@ -86,13 +86,12 @@ public class Route {
 
     @Override
     public String toString(){
-        return "airplane_commander { " +
-                "id = " + id +
-                ", departure_city = '" + departureCity + '\'' +
-                ", departure_airport = '" + departureAirport + '\'' +
-                ", arrival_city = '" + arrivalCity + '\'' +
-                ", arrival_airport = '" + arrivalAirport + '\'' +
-                ", distance = '" + distance + '\'' +
-                '}';
+        return "\n{ ID = " + id +
+                ", город отправления = '" + departureCity + '\'' +
+                ", аэропорт отправления = '" + departureAirport + '\'' +
+                ", город прибытия = '" + arrivalCity + '\'' +
+                ", аэропорт прибытия = '" + arrivalAirport + '\'' +
+                ", расстояние = '" + distance + '\'' +
+                " }";
     }
 }

@@ -64,11 +64,10 @@ public class Pricing {
 
     @Override
     public String toString(){
-        return "route { " +
-                "id = " + id +
-                ", route = '" + route.getId() + '\'' +
-                ", airplane = '" + airplane.getId() + '\'' +
-                ", ticket_price = '" + ticketPrice + '\'' +
-                '}';
+        return "\n{ ID = " + id +
+                ", номер маршрута = '" + route.getId() + '\'' +
+                ", номер самолета = '" + airplane.getId() + '\'' +
+                ", цена билета = '" + ticketPrice + '\'' +
+                " }";
     }
 }

@@ -74,12 +74,11 @@ public class Airplane {
 
     @Override
     public String toString(){
-        return "airplane { " +
-                "id = " + id +
-                ", model = '" + model + '\'' +
-                ", max_seats = '" + maxSeats + '\'' +
-                ", flight_lenght = '" + flightLenght + '\'' +
-                ", year_of_release = '" + yearOfRelease + '\'' +
-                '}';
+        return "\n{ ID = " + id +
+                ", модель = '" + model + '\'' +
+                ", максимальное количество мест = '" + maxSeats + '\'' +
+                ", максимальная длина полета = '" + flightLenght + '\'' +
+                ", год выпуска = '" + yearOfRelease + '\'' +
+                " }";
     }
 }

@@ -75,12 +75,11 @@ public class Airplane_Commander {
 
     @Override
     public String toString(){
-        return "airplane_commander { " +
-                "id = " + id +
-                ", full_name = '" + fullName + '\'' +
-                ", phone_number = '" + phoneNumber + '\'' +
-                ", date_of_birth = '" + dateOfBirth + '\'' +
-                ", number_of_flight_hours = '" + numberOfFlightHours + '\'' +
-                '}';
+        return "\n{ ID = " + id +
+                ", ФИО = '" + fullName + '\'' +
+                ", номер телефона = '" + phoneNumber + '\'' +
+                ", дата рождения = '" + dateOfBirth + '\'' +
+                ", количество летных часов = '" + numberOfFlightHours + '\'' +
+                " }";
     }
 }

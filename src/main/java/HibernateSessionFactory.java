@@ -6,9 +6,14 @@ public class HibernateSessionFactory {
     private static SessionFactory sessionFactory;
 
     protected static void buildSessionFactory() {
-        StandardServiceRegistry std = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-        Metadata metadata = new MetadataSources(std).getMetadataBuilder().build();
-        sessionFactory = metadata.getSessionFactoryBuilder().build();
+        try {
+            StandardServiceRegistry std = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+            Metadata metadata = new MetadataSources(std).getMetadataBuilder().build();
+            sessionFactory = metadata.getSessionFactoryBuilder().build();
+        }
+        catch (Exception exception){
+            System.out.println("Ошибка при попытке соединения.");
+        }
     }
 
     public static SessionFactory getSessionFactory() {
