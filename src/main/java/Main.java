@@ -1,10 +1,17 @@
 import logics.*;
 import org.hibernate.*;
+import  org.jboss.logging.Logger;
 
+import java.util.logging.Level;
+import static java.util.logging.Logger.getLogger;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
+        Logger logger = org.jboss.logging.Logger.getLogger("org.hibernate");
+        getLogger("org.hibernate").setLevel(Level.OFF);
+
         HibernateSessionFactory.buildSessionFactory();
         Session session = HibernateSessionFactory.getSessionFactory().openSession();
         boolean work = true;

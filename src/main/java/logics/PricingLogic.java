@@ -113,7 +113,7 @@ public class PricingLogic {
             session.delete(pricing);
         }
         catch (Exception ex) {
-            System.out.println("Ошибка: " + ex + ". Проверьте данные и попробуйте еще раз.");
+            System.out.println("Ошибка: " + ex + ". Проверьте данные и попробуйте еще раз (ключ не должен использоваться в других таблицах).");
         }
     }
 
